@@ -1,0 +1,94 @@
+site_name: Criação de API - Manga
+site_description: Criação de APIs para o Manga
+site_url: https://mydomain.org/
+site_author: Aiko Dev
+site_dir: dist
+nav:
+  - index.md
+  - code-examples.md
+extra_css:
+  - styles/extra.css
+copyright: >
+    Copyright &copy; 2025 - Aiko Dev –
+    <a href="#__consent">Alterar configurações de cookies</a>
+plugins:
+  - social
+  - glightbox:
+      background: black
+markdown_extensions:
+  - tables
+  - attr_list
+  - md_in_html
+  - github-callouts
+  - pymdownx.betterem
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji 
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      use_pygments: true
+      linenums: true
+      anchor_linenums: true
+      auto_title: true
+  - pymdownx.superfences
+  - pymdownx.mark
+  - pymdownx.blocks.caption
+  - pymdownx.tasklist:
+      custom_checkbox: true
+theme:
+  name: material
+  language: pt-BR
+  palette:
+  - media: '(prefers-color-scheme: light)'
+    scheme: default
+    primary: custom
+    toggle:
+      icon: material/white-balance-sunny
+      name: Alterar para o tema escuro
+  - media: '(prefers-color-scheme: dark)'
+    scheme: slate
+    primary: custom
+    toggle:
+      icon: material/weather-night
+      name: Alterar para o tema claro
+  features:
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.sections
+    - navigation.expand
+    - navigation.indexes
+    - navigation.top
+    - search.suggest
+    - search.share
+    - content.code.copy
+  logo: assets/logo.png
+  favicon: images/favicon.png
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/orgs/Aiko-Dev
+    - icon: fontawesome/brands/google-play
+      link: https://play.google.com/store/apps/developer?id=AIKO+DEV
+  consent:
+      title: Cookies
+      description: >- 
+        Usamos cookies para reconhecer suas visitas e preferências repetidas, bem
+        como para medir a eficácia da nossa documentação e se os usuários
+        encontram o que estão procurando. Com seu consentimento, você nos ajuda a
+        melhorar nossa documentação.
+  analytics:
+    provider: google
+    property: G-LHXZN2WHDK
+  feedback:
+      title: Por favor, diga-nos se esta página te ajudou
+      ratings:
+        - icon: material/emoticon-happy-outline
+          name: Esta página me ajudou
+          data: 1
+          note: >-
+            Obrigado pelo seu feedback!
+        - icon: material/emoticon-sad-outline
+          name: Esta página precisa de melhorias
+          data: 0
+          note: >- 
+            Obrigado pelo seu feedback!
+  

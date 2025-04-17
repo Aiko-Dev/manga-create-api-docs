@@ -1,0 +1,1 @@
+# Manga create api docs

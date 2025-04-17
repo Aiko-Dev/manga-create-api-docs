@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "manga-create-api-docs"
+version = "0.1.0"
+description = "Documentation about how to create an API for Manga app"
+authors = ["Lobooooooo14 <88998991+Lobooooooo14@users.noreply.github.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.13"
+mkdocs-material = {extras = ["imaging"], version = "^9.6.11"}
+markdown-callouts = "^0.4.0"
+pymdown-extensions = "^10.14.3"
+pygments = "^2.19.1"
+mkdocs-glightbox = "^0.4.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
