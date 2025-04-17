@@ -62,4 +62,4 @@ jobs:
             mkdocs-material-
 
       - name: 📦 Build and deploy docs
-        run: mkdocs gh-deploy --force
+        run: poetry run mkdocs gh-deploy --force
