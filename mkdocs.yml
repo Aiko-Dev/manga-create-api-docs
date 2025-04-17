@@ -62,7 +62,7 @@ theme:
     - search.suggest
     - search.share
     - content.code.copy
-  logo: assets/logo.png
+  logo: assets/logo-dark.png
   favicon: images/favicon.png
 extra:
   social:
