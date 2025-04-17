@@ -12,7 +12,9 @@ copyright: >
     Copyright &copy; 2025 - Aiko Dev –
     <a href="#__consent">Alterar configurações de cookies</a>
 plugins:
-  - social
+  - social:
+      cards_layout_options:
+        background_color: "#ff6164"
   - glightbox:
       background: black
 markdown_extensions:
