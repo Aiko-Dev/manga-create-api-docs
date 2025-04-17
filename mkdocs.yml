@@ -1,6 +1,6 @@
 site_name: Criação de API - Manga
-site_description: Criação de APIs para o Manga
-site_url: https://mydomain.org/
+site_description: Documentação de criação de APIs para o Manga
+site_url: https://aiko-dev.github.io/manga-create-api-docs/
 site_author: Aiko Dev
 site_dir: dist
 nav:
