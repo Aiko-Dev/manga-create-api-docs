@@ -14,7 +14,7 @@
 
 <h2 align="center">Desenvolvendo a documentação</h2>
 
-<p>O projeto utiliza <a href="https://www.python.org">Python</a>, com o gerenciador de pacotes <a href="https://python-poetry.org">Poetry</a>. Certifique-se de instala-los antes de iniciar o desenvolvimento.</p>
+<p>O projeto utiliza <a href="https://www.python.org">Python 3.13</a> com o gerenciador de pacotes <a href="https://python-poetry.org">Poetry</a>. Certifique-se de instalá-los antes de iniciar o desenvolvimento. Recomendamos o uso do <a href="https://github.com/pyenv/pyenv">Pyenv</a> para gerenciar versões do Python (<i>ou outro de sua preferência</i>), o <a href="https://learn.microsoft.com/pt-br/windows/wsl/about">WSL</a> para usuários de Windows e o editor de código <a href="https://code.visualstudio.com">VSCode</a> (<i>devido as extensões já configuradas neste projeto</i>).</p>
 
 <p>Ative o ambiente virtual:</p>
 
