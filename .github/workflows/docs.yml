@@ -1,0 +1,65 @@
+name: 📄 Deploy docs
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+jobs:
+  deploy:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: 📂 Checkout
+        id: checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          token: ${{ secrets.TOKEN }}
+
+      - name: ⚙️ Configure Git
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+
+      - name: 🐍 Set up Python
+        id: setup-python
+        uses: actions/setup-python@v4
+        with:
+          python-version-file: ".python-version"
+
+      - name: 💫 Install Poetry
+        id: install-poetry
+        uses: snok/install-poetry@v1
+        with:
+          version: 1.8.4
+          virtualenvs-create: true
+          virtualenvs-in-project: true
+          virtualenvs-path: .venv
+          installer-parallel: true
+
+      - name: 📦 Load cached venv
+        id: cached-poetry-dependencies
+        uses: actions/cache@v4
+        with:
+          path: .venv
+          key: venv-${{ runner.os }}-${{ steps.setup-python.outputs.python-version }}-${{ hashFiles('**/poetry.lock') }}
+
+      - name: 📦 Install dependencies
+        id: install-dependencies
+        if: steps.cached-poetry-dependencies.outputs.cache-hit != 'true'
+        run: |
+          poetry install --no-root --no-interaction
+
+      - name: 🔑 Creating cache id for mkdocs
+        run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV
+
+      - name: 📦 Load cached mkdocs data
+        uses: actions/cache@v4
+        with:
+          key: mkdocs-material-${{ env.cache_id }}
+          path: .cache
+          restore-keys: |
+            mkdocs-material-
+
+      - name: 📦 Build and deploy docs
+        run: mkdocs gh-deploy --force

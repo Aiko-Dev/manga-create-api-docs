@@ -8,7 +8,7 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.13"
-mkdocs-material = {extras = ["imaging"], version = "^9.6.11"}
+mkdocs-material = { extras = ["imaging"], version = "^9.6.11" }
 markdown-callouts = "^0.4.0"
 pymdown-extensions = "^10.14.3"
 pygments = "^2.19.1"
