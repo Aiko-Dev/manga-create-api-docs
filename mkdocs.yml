@@ -3,11 +3,17 @@ site_description: Documentação de criação de APIs para o Manga
 site_url: https://aiko-dev.github.io/manga-create-api-docs/
 site_author: Aiko Dev
 site_dir: dist
+
 nav:
-  - index.md
-  - code-examples.md
+  - Introdução: index.md
+  - Primeiros Passos:
+    - getting-started/index.md
+    - Rotas: getting-started/routes.md
+  - Exemplos em código: code-examples.md
+  - Sobre nós: about.md
+  
 extra_css:
-  - styles/extra.css
+  - assets/styles/extra.css
 copyright: >
     Copyright &copy; 2025 - Aiko Dev –
     <a href="#__consent">Alterar configurações de cookies</a>
@@ -17,6 +23,8 @@ plugins:
         background_color: "#ff6164"
   - glightbox:
       background: black
+      skip_classes:
+        - skip-lightbox
 markdown_extensions:
   - tables
   - attr_list
@@ -59,11 +67,12 @@ theme:
     - navigation.expand
     - navigation.indexes
     - navigation.top
+    - navigation.footer
     - search.suggest
     - search.share
     - content.code.copy
-  logo: assets/logo-dark.png
-  favicon: images/favicon.png
+  logo: assets/images/logo-dark.png
+  favicon: assets/favicon.png
 extra:
   social:
     - icon: fontawesome/brands/github

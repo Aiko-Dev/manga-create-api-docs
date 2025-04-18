@@ -1,0 +1,15 @@
+{
+  "overrides": [
+    {
+      "files": "*.md",
+      "options": {
+        "trailingComma": "none",
+        "tabWidth": 4,
+        "semi": false,
+        "singleQuote": false,
+        "printWidth": 80,
+        "endOfLine": "lf"
+      }
+    }
+  ]
+}

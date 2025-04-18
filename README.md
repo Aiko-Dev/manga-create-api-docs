@@ -1,8 +1,8 @@
 <div align="center">
    <picture>
-      <source alt="Manga app logo" media="(prefers-color-scheme: dark)" srcset="./docs/assets/logo-dark.png" width="100">
-      <source alt="Manga app logo" media="(prefers-color-scheme: light)" srcset="./docs/assets/logo-light.png" width="100">
-      <img alt="Manga app logo" src="./docs/assets/logo-dark.png" width="100">
+      <source alt="Manga app logo" media="(prefers-color-scheme: dark)" srcset="./docs/assets/images/logo-dark.png" width="100">
+      <source alt="Manga app logo" media="(prefers-color-scheme: light)" srcset="./docs/assets/images/logo-light.png" width="100">
+      <img alt="Manga app logo" src="./docs/assets/images/logo-dark.png" width="100">
     </picture>
   <h1>Manga create APIs docs</h1>
 </div>

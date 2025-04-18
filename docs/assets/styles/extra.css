@@ -10,5 +10,10 @@
 
 .md-typeset .twemoji {
   --md-icon-size: 1.5em;
-  vertical-align: middle;
+  vertical-align: top;
+  margin: 0 0.1rem;
+}
+
+.md-typeset .admonition, .md-typeset details {
+  font-size: 0.8rem;
 }
