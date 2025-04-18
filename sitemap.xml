@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://aiko-dev.github.io/manga-create-api-docs/</loc>
+         <lastmod>2025-04-18</lastmod>
+    </url>
+    <url>
+         <loc>https://aiko-dev.github.io/manga-create-api-docs/about/</loc>
+         <lastmod>2025-04-18</lastmod>
+    </url>
+    <url>
+         <loc>https://aiko-dev.github.io/manga-create-api-docs/code-examples/</loc>
+         <lastmod>2025-04-18</lastmod>
+    </url>
+    <url>
+         <loc>https://aiko-dev.github.io/manga-create-api-docs/getting-started/</loc>
+         <lastmod>2025-04-18</lastmod>
+    </url>
+    <url>
+         <loc>https://aiko-dev.github.io/manga-create-api-docs/getting-started/routes/</loc>
+         <lastmod>2025-04-18</lastmod>
+    </url>
+</urlset>

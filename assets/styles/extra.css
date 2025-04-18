@@ -1,0 +1,19 @@
+:root  > * {
+    --md-primary-fg-color:        hsl(359, 100%, 69%);
+    --md-primary-fg-color--light: hsl(359, 100%, 96%);
+    --md-primary-fg-color--dark:  hsl(359, 100%, 16%);
+
+    --md-accent-fg-color:         hsl(247, 100%, 69%);
+    --md-accent-fg-color--light:  hsl(247, 100%, 96%);
+    --md-accent-fg-color--dark:   hsl(247, 100%, 16%);
+}
+
+.md-typeset .twemoji {
+  --md-icon-size: 1.5em;
+  vertical-align: top;
+  margin: 0 0.1rem;
+}
+
+.md-typeset .admonition, .md-typeset details {
+  font-size: 0.8rem;
+}
